@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30FA828E1EE4F5E3008A0C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA828D1EE4F5E3008A0C9E /* main.m */; };
+		30FA82911EE4F5E3008A0C9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82901EE4F5E3008A0C9E /* AppDelegate.m */; };
+		30FA82941EE4F5E3008A0C9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82931EE4F5E3008A0C9E /* ViewController.m */; };
+		30FA82971EE4F5E3008A0C9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30FA82951EE4F5E3008A0C9E /* Main.storyboard */; };
+		30FA82991EE4F5E3008A0C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30FA82981EE4F5E3008A0C9E /* Assets.xcassets */; };
+		30FA829C1EE4F5E3008A0C9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30FA829A1EE4F5E3008A0C9E /* LaunchScreen.storyboard */; };
+		30FA82A61EE4F760008A0C9E /* KGConversationListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82A51EE4F760008A0C9E /* KGConversationListVC.m */; };
+		30FA82A91EE4FB84008A0C9E /* KGUserDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82A81EE4FB84008A0C9E /* KGUserDataSource.m */; };
+		30FA82AC1EE511ED008A0C9E /* ChatTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82AB1EE511ED008A0C9E /* ChatTestViewController.m */; };
+		D9592B38776AC466BC02943B /* Pods_RongCloudTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B1720F4133DDFFBAB6257E /* Pods_RongCloudTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30FA82891EE4F5E3008A0C9E /* RongCloudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RongCloudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30FA828D1EE4F5E3008A0C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30FA828F1EE4F5E3008A0C9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30FA82901EE4F5E3008A0C9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30FA82921EE4F5E3008A0C9E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		30FA82931EE4F5E3008A0C9E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		30FA82961EE4F5E3008A0C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30FA82981EE4F5E3008A0C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30FA829B1EE4F5E3008A0C9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30FA829D1EE4F5E3008A0C9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30FA82A41EE4F760008A0C9E /* KGConversationListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGConversationListVC.h; sourceTree = "<group>"; };
+		30FA82A51EE4F760008A0C9E /* KGConversationListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGConversationListVC.m; sourceTree = "<group>"; };
+		30FA82A71EE4FB84008A0C9E /* KGUserDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGUserDataSource.h; sourceTree = "<group>"; };
+		30FA82A81EE4FB84008A0C9E /* KGUserDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGUserDataSource.m; sourceTree = "<group>"; };
+		30FA82AA1EE511ED008A0C9E /* ChatTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTestViewController.h; sourceTree = "<group>"; };
+		30FA82AB1EE511ED008A0C9E /* ChatTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTestViewController.m; sourceTree = "<group>"; };
+		89A661BBF4220E7C8CF33F31 /* Pods-RongCloudTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudTest/Pods-RongCloudTest.debug.xcconfig"; sourceTree = "<group>"; };
+		971ED6017F60CFBEF7E36A82 /* Pods-RongCloudTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RongCloudTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RongCloudTest/Pods-RongCloudTest.release.xcconfig"; sourceTree = "<group>"; };
+		B3B1720F4133DDFFBAB6257E /* Pods_RongCloudTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RongCloudTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30FA82861EE4F5E3008A0C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9592B38776AC466BC02943B /* Pods_RongCloudTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30FA82801EE4F5E3008A0C9E = {
+			isa = PBXGroup;
+			children = (
+				30FA828B1EE4F5E3008A0C9E /* RongCloudTest */,
+				30FA828A1EE4F5E3008A0C9E /* Products */,
+				D3D3CB763B3B0CD8AF86A3E3 /* Pods */,
+				554A69C458D18DE9ACCF450F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		30FA828A1EE4F5E3008A0C9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30FA82891EE4F5E3008A0C9E /* RongCloudTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30FA828B1EE4F5E3008A0C9E /* RongCloudTest */ = {
+			isa = PBXGroup;
+			children = (
+				30FA82AA1EE511ED008A0C9E /* ChatTestViewController.h */,
+				30FA82AB1EE511ED008A0C9E /* ChatTestViewController.m */,
+				30FA82A71EE4FB84008A0C9E /* KGUserDataSource.h */,
+				30FA82A81EE4FB84008A0C9E /* KGUserDataSource.m */,
+				30FA82A41EE4F760008A0C9E /* KGConversationListVC.h */,
+				30FA82A51EE4F760008A0C9E /* KGConversationListVC.m */,
+				30FA82A31EE4F5EA008A0C9E /* application */,
+				30FA82921EE4F5E3008A0C9E /* ViewController.h */,
+				30FA82931EE4F5E3008A0C9E /* ViewController.m */,
+				30FA828C1EE4F5E3008A0C9E /* Supporting Files */,
+			);
+			path = RongCloudTest;
+			sourceTree = "<group>";
+		};
+		30FA828C1EE4F5E3008A0C9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30FA828D1EE4F5E3008A0C9E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30FA82A31EE4F5EA008A0C9E /* application */ = {
+			isa = PBXGroup;
+			children = (
+				30FA82951EE4F5E3008A0C9E /* Main.storyboard */,
+				30FA82981EE4F5E3008A0C9E /* Assets.xcassets */,
+				30FA829A1EE4F5E3008A0C9E /* LaunchScreen.storyboard */,
+				30FA829D1EE4F5E3008A0C9E /* Info.plist */,
+				30FA828F1EE4F5E3008A0C9E /* AppDelegate.h */,
+				30FA82901EE4F5E3008A0C9E /* AppDelegate.m */,
+			);
+			name = application;
+			sourceTree = "<group>";
+		};
+		554A69C458D18DE9ACCF450F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3B1720F4133DDFFBAB6257E /* Pods_RongCloudTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3D3CB763B3B0CD8AF86A3E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89A661BBF4220E7C8CF33F31 /* Pods-RongCloudTest.debug.xcconfig */,
+				971ED6017F60CFBEF7E36A82 /* Pods-RongCloudTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30FA82881EE4F5E3008A0C9E /* RongCloudTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30FA82A01EE4F5E3008A0C9E /* Build configuration list for PBXNativeTarget "RongCloudTest" */;
+			buildPhases = (
+				D1F8A52061C20B3D8BD79393 /* [CP] Check Pods Manifest.lock */,
+				30FA82851EE4F5E3008A0C9E /* Sources */,
+				30FA82861EE4F5E3008A0C9E /* Frameworks */,
+				30FA82871EE4F5E3008A0C9E /* Resources */,
+				B268F874CF109B621E9DB266 /* [CP] Embed Pods Frameworks */,
+				562D35707098FC882BBBE997 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RongCloudTest;
+			productName = RongCloudTest;
+			productReference = 30FA82891EE4F5E3008A0C9E /* RongCloudTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30FA82811EE4F5E3008A0C9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = majianjie;
+				TargetAttributes = {
+					30FA82881EE4F5E3008A0C9E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = CSPDBDZ5FD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 30FA82841EE4F5E3008A0C9E /* Build configuration list for PBXProject "RongCloudTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30FA82801EE4F5E3008A0C9E;
+			productRefGroup = 30FA828A1EE4F5E3008A0C9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30FA82881EE4F5E3008A0C9E /* RongCloudTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30FA82871EE4F5E3008A0C9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FA829C1EE4F5E3008A0C9E /* LaunchScreen.storyboard in Resources */,
+				30FA82991EE4F5E3008A0C9E /* Assets.xcassets in Resources */,
+				30FA82971EE4F5E3008A0C9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		562D35707098FC882BBBE997 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RongCloudTest/Pods-RongCloudTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B268F874CF109B621E9DB266 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RongCloudTest/Pods-RongCloudTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F8A52061C20B3D8BD79393 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30FA82851EE4F5E3008A0C9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FA82941EE4F5E3008A0C9E /* ViewController.m in Sources */,
+				30FA82911EE4F5E3008A0C9E /* AppDelegate.m in Sources */,
+				30FA82A91EE4FB84008A0C9E /* KGUserDataSource.m in Sources */,
+				30FA828E1EE4F5E3008A0C9E /* main.m in Sources */,
+				30FA82AC1EE511ED008A0C9E /* ChatTestViewController.m in Sources */,
+				30FA82A61EE4F760008A0C9E /* KGConversationListVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30FA82951EE4F5E3008A0C9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30FA82961EE4F5E3008A0C9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30FA829A1EE4F5E3008A0C9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30FA829B1EE4F5E3008A0C9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30FA829E1EE4F5E3008A0C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30FA829F1EE4F5E3008A0C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30FA82A11EE4F5E3008A0C9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A661BBF4220E7C8CF33F31 /* Pods-RongCloudTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CSPDBDZ5FD;
+				INFOPLIST_FILE = RongCloudTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingding.RongCloudTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30FA82A21EE4F5E3008A0C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971ED6017F60CFBEF7E36A82 /* Pods-RongCloudTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CSPDBDZ5FD;
+				INFOPLIST_FILE = RongCloudTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dingding.RongCloudTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30FA82841EE4F5E3008A0C9E /* Build configuration list for PBXProject "RongCloudTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30FA829E1EE4F5E3008A0C9E /* Debug */,
+				30FA829F1EE4F5E3008A0C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30FA82A01EE4F5E3008A0C9E /* Build configuration list for PBXNativeTarget "RongCloudTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30FA82A11EE4F5E3008A0C9E /* Debug */,
+				30FA82A21EE4F5E3008A0C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30FA82811EE4F5E3008A0C9E /* Project object */;
+}
