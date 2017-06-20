@@ -7,5 +7,5 @@ target 'RongCloudTest' do
 
 
     pod 'RongCloudIMKit'
-
+    pod 'Masonry'
 end
