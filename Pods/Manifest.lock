@@ -1,12 +1,15 @@
 PODS:
+  - Masonry (1.0.2)
   - RongCloudIMKit (2.7.3.1)
 
 DEPENDENCIES:
+  - Masonry
   - RongCloudIMKit
 
 SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   RongCloudIMKit: bc83889f5b7fbb82c104d778ca6633b3681e81d5
 
-PODFILE CHECKSUM: 8e8e914a51e06bc2536c44554245eb549cf1fe54
+PODFILE CHECKSUM: 4da5d67f21ab77d2d1cbb38d15015bcfbc8be68e
 
 COCOAPODS: 1.2.0.beta.3
