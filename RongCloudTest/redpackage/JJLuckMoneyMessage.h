@@ -11,8 +11,8 @@
 @interface JJLuckMoneyMessage : RCMessageContent
 
 @property (nonatomic,assign)double amount;
-@property (nonatomic,assign)NSString *desc;
+@property (nonatomic,strong)NSString *desc;
 
-- (instancetype)initWith:(double) amonut description:(NSString *)desc;
+- (instancetype)initWith:(double)amonut description:(NSString *)desc;
 
 @end

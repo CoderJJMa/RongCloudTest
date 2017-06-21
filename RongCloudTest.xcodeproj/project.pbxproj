@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30105DFF1EF8EA3B006F1022 /* JJLuckMoneyMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30105DFE1EF8EA3B006F1022 /* JJLuckMoneyMessageCell.m */; };
-		30A98D5E1EF7A5DA0014559B /* JJLuckMoneyMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A98D5D1EF7A5DA0014559B /* JJLuckMoneyMessage.m */; };
+		30105E091EF90910006F1022 /* JJLuckMoneyMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30105E061EF90910006F1022 /* JJLuckMoneyMessage.m */; };
+		30105E0A1EF90910006F1022 /* JJLuckMoneyMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30105E081EF90910006F1022 /* JJLuckMoneyMessageCell.m */; };
+		30105E0D1EF9091B006F1022 /* JJRecalMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30105E0C1EF9091B006F1022 /* JJRecalMessage.m */; };
+		30105E101EF90951006F1022 /* JJRecalMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30105E0F1EF90951006F1022 /* JJRecalMessageCell.m */; };
 		30FA828E1EE4F5E3008A0C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA828D1EE4F5E3008A0C9E /* main.m */; };
 		30FA82911EE4F5E3008A0C9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82901EE4F5E3008A0C9E /* AppDelegate.m */; };
 		30FA82941EE4F5E3008A0C9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82931EE4F5E3008A0C9E /* ViewController.m */; };
@@ -22,10 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		30105DFD1EF8EA3B006F1022 /* JJLuckMoneyMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJLuckMoneyMessageCell.h; sourceTree = "<group>"; };
-		30105DFE1EF8EA3B006F1022 /* JJLuckMoneyMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJLuckMoneyMessageCell.m; sourceTree = "<group>"; };
-		30A98D5C1EF7A5DA0014559B /* JJLuckMoneyMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJLuckMoneyMessage.h; sourceTree = "<group>"; };
-		30A98D5D1EF7A5DA0014559B /* JJLuckMoneyMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJLuckMoneyMessage.m; sourceTree = "<group>"; };
+		30105E051EF90910006F1022 /* JJLuckMoneyMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJLuckMoneyMessage.h; sourceTree = "<group>"; };
+		30105E061EF90910006F1022 /* JJLuckMoneyMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJLuckMoneyMessage.m; sourceTree = "<group>"; };
+		30105E071EF90910006F1022 /* JJLuckMoneyMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJLuckMoneyMessageCell.h; sourceTree = "<group>"; };
+		30105E081EF90910006F1022 /* JJLuckMoneyMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJLuckMoneyMessageCell.m; sourceTree = "<group>"; };
+		30105E0B1EF9091B006F1022 /* JJRecalMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJRecalMessage.h; sourceTree = "<group>"; };
+		30105E0C1EF9091B006F1022 /* JJRecalMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJRecalMessage.m; sourceTree = "<group>"; };
+		30105E0E1EF90951006F1022 /* JJRecalMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJRecalMessageCell.h; sourceTree = "<group>"; };
+		30105E0F1EF90951006F1022 /* JJRecalMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJRecalMessageCell.m; sourceTree = "<group>"; };
 		30FA82891EE4F5E3008A0C9E /* RongCloudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RongCloudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FA828D1EE4F5E3008A0C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30FA828F1EE4F5E3008A0C9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +65,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30105E031EF908DE006F1022 /* redpackage */ = {
+			isa = PBXGroup;
+			children = (
+				30105E051EF90910006F1022 /* JJLuckMoneyMessage.h */,
+				30105E061EF90910006F1022 /* JJLuckMoneyMessage.m */,
+				30105E071EF90910006F1022 /* JJLuckMoneyMessageCell.h */,
+				30105E081EF90910006F1022 /* JJLuckMoneyMessageCell.m */,
+			);
+			path = redpackage;
+			sourceTree = "<group>";
+		};
+		30105E041EF908DE006F1022 /* redpackage2 */ = {
+			isa = PBXGroup;
+			children = (
+				30105E0B1EF9091B006F1022 /* JJRecalMessage.h */,
+				30105E0C1EF9091B006F1022 /* JJRecalMessage.m */,
+				30105E0E1EF90951006F1022 /* JJRecalMessageCell.h */,
+				30105E0F1EF90951006F1022 /* JJRecalMessageCell.m */,
+			);
+			path = redpackage2;
+			sourceTree = "<group>";
+		};
 		30FA82801EE4F5E3008A0C9E = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +108,8 @@
 		30FA828B1EE4F5E3008A0C9E /* RongCloudTest */ = {
 			isa = PBXGroup;
 			children = (
+				30105E031EF908DE006F1022 /* redpackage */,
+				30105E041EF908DE006F1022 /* redpackage2 */,
 				30FA82AA1EE511ED008A0C9E /* ChatTestViewController.h */,
 				30FA82AB1EE511ED008A0C9E /* ChatTestViewController.m */,
 				30FA82A71EE4FB84008A0C9E /* KGUserDataSource.h */,
@@ -90,10 +120,6 @@
 				30FA82921EE4F5E3008A0C9E /* ViewController.h */,
 				30FA82931EE4F5E3008A0C9E /* ViewController.m */,
 				30FA828C1EE4F5E3008A0C9E /* Supporting Files */,
-				30A98D5C1EF7A5DA0014559B /* JJLuckMoneyMessage.h */,
-				30A98D5D1EF7A5DA0014559B /* JJLuckMoneyMessage.m */,
-				30105DFD1EF8EA3B006F1022 /* JJLuckMoneyMessageCell.h */,
-				30105DFE1EF8EA3B006F1022 /* JJLuckMoneyMessageCell.m */,
 			);
 			path = RongCloudTest;
 			sourceTree = "<group>";
@@ -260,9 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				30FA82941EE4F5E3008A0C9E /* ViewController.m in Sources */,
-				30A98D5E1EF7A5DA0014559B /* JJLuckMoneyMessage.m in Sources */,
+				30105E091EF90910006F1022 /* JJLuckMoneyMessage.m in Sources */,
 				30FA82911EE4F5E3008A0C9E /* AppDelegate.m in Sources */,
-				30105DFF1EF8EA3B006F1022 /* JJLuckMoneyMessageCell.m in Sources */,
+				30105E101EF90951006F1022 /* JJRecalMessageCell.m in Sources */,
+				30105E0D1EF9091B006F1022 /* JJRecalMessage.m in Sources */,
+				30105E0A1EF90910006F1022 /* JJLuckMoneyMessageCell.m in Sources */,
 				30FA82A91EE4FB84008A0C9E /* KGUserDataSource.m in Sources */,
 				30FA828E1EE4F5E3008A0C9E /* main.m in Sources */,
 				30FA82AC1EE511ED008A0C9E /* ChatTestViewController.m in Sources */,

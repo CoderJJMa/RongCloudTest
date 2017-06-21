@@ -14,6 +14,7 @@
 #import <RongIMKit/RongIMKit.h>
 #import "KGUserDataSource.h"
 #import "JJLuckMoneyMessage.h"
+#import "JJRecalMessage.h"
 
 @interface AppDelegate ()
 
@@ -36,6 +37,9 @@
     
     // 注册红包消息
     [[RCIM sharedRCIM] registerMessageType:[JJLuckMoneyMessage class]];
+
+    [[RCIM sharedRCIM] registerMessageType:[JJRecalMessage class]];
+
     
     // john   9GMnw9RDHP7qQ/0SNrl/PCb5NDtUcwko6Dg8ItLlzZF9p/sxAmbqAoGY6kRFRMHQv+rZ3OA2ic8ODro5juzvMw==
     

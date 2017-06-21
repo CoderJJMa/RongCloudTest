@@ -14,19 +14,20 @@
 - (instancetype)initWith:(double)amonut description:(NSString *)desc{
     
     if (self = [super init]) {
-        
+        self.amount = amonut;
+        self.desc = desc;
     }
     
     return  self;
 }
 
-/** messageCoding 协议*/
+/** RCMessageCoding 协议*/
 - (NSData *)encode{
     
-    return [NSJSONSerialization dataWithJSONObject:@{@"amount":@(self.amount),@"desc":self.description} options:NSJSONWritingPrettyPrinted error:nil];
+    return [NSJSONSerialization dataWithJSONObject:@{@"amount":@(self.amount),@"desc":self.desc} options:NSJSONWritingPrettyPrinted error:nil];
 }
 
-
+// 服务器收到data 转换出来
 - (void)decodeWithData:(NSData *)data{
     
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
@@ -41,10 +42,7 @@
     return NSStringFromClass([self class]);
 }
 
-
-
-/** 存储 协议*/
-
+/** RCMessagePersistentCompatible 存储 协议*/
 + (RCMessagePersistent)persistentFlag{
     return MessagePersistent_ISCOUNTED;
 }
@@ -55,7 +53,7 @@
 /** RCMessageContentView 协议*/
 - (NSString *)conversationDigest{
     
-    return @"[RongCloud 红包]";
+    return @"[融云 红包]";
     
 }
 

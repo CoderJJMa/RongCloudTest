@@ -22,6 +22,9 @@
     self = [super init];
     
     if (self) {
+        
+        [self setCollectionConversationType:@[@(ConversationType_PRIVATE)]];// 加上这句 下面 selected 时候 就得单独处理
+        
         [self setDisplayConversationTypes:@[@(ConversationType_PRIVATE)]];
     }
     
@@ -111,14 +114,35 @@
 
 - (void)onSelectedTableRow:(RCConversationModelType)conversationModelType conversationModel:(RCConversationModel *)model atIndexPath:(NSIndexPath *)indexPath{
     
+    if(conversationModelType == RC_CONVERSATION_MODEL_TYPE_COLLECTION){
+        
+        KGConversationListVC *temp = [[KGConversationListVC alloc] init];
+        NSArray *array = [NSArray arrayWithObject:[NSNumber numberWithInt:model.conversationType]];
+        
+        [temp setDisplayConversationTypeArray:array];
+        [temp setCollectionConversationType:nil];
+        
+        temp.isEnteredToCollectionViewController = YES;
+        
+        [self.navigationController pushViewController:temp animated:YES];
+        
+    }else if(conversationModelType == ConversationType_PRIVATE){
+        
+        ChatTestViewController *vc = [[ChatTestViewController alloc] init];;
+        
+        vc.conversationType = model.conversationType;
+        vc.targetId = model.targetId;
+        vc.title = model.targetId;
+        
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     
-    ChatTestViewController *vc = [[ChatTestViewController alloc] init];;
     
-    vc.conversationType = model.conversationType;
-    vc.targetId = model.targetId;
-    vc.title = model.targetId;
     
-    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (void)didTapCellPortrait:(RCConversationModel *)model{
+    
     
     
 }

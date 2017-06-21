@@ -7,14 +7,14 @@
 //
 
 #import <RongIMKit/RongIMKit.h>
+#import "ChatTestViewController.h"
 
-@class KGConversationListVC;
 
 @interface JJLuckMoneyMessageCell : RCMessageCell
 
 
 
-@property (nonatomic,weak)KGConversationListVC *conversationVC;
+@property (nonatomic,weak)ChatTestViewController *conversationVC;
 
 + (NSString *)identifier;
 
