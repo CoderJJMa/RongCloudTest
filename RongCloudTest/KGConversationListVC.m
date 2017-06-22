@@ -23,9 +23,10 @@
     
     if (self) {
         
-        [self setCollectionConversationType:@[@(ConversationType_PRIVATE)]];// 加上这句 下面 selected 时候 就得单独处理
+//        [self setCollectionConversationType:@[@(ConversationType_PRIVATE),@(ConversationType_DISCUSSION),@(ConversationType_GROUP)]];// 加上这句 下面 selected 时候 就得单独处理
         
-        [self setDisplayConversationTypes:@[@(ConversationType_PRIVATE)]];
+        [self setDisplayConversationTypes:@[@(ConversationType_PRIVATE),@(ConversationType_DISCUSSION),@(ConversationType_GROUP),@(ConversationType_CHATROOM)]];
+        
     }
     
     return self;
@@ -70,7 +71,7 @@
     
     self.navigationItem.leftBarButtonItem = left;
 
-    UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add)];
+    UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addGroup)];
                                
     self.navigationItem.rightBarButtonItem = right;
     
@@ -78,11 +79,29 @@
 }
 
 
-- (void)add{
+
+- (void)addGroup{
     
+//    - (void)createDiscussion:(NSString *)name
+//userIdList:(NSArray *)userIdList
+//success:(void (^)(RCDiscussion *discussion))successBlock
+//error:(void (^)(RCErrorCode status))errorBlock;
+
     
+    [[RCIMClient sharedRCIMClient] createDiscussion:@"讨论组1" userIdList:@[@"jack",@"john"] success:^(RCDiscussion *discussion) {
+       
+        NSLog(@"成功创建  %@  讨论组",discussion.discussionName);
+        NSLog(@"%@",discussion.discussionId);
+        NSLog(@"%@",discussion.discussionId);
+
+        
+    } error:^(RCErrorCode status) {
+        
+    }];
+    
+/*
     NSString *targetId = @"jack";
-    
+ 
     if ([[[RCIMClient sharedRCIMClient] currentUserInfo].userId isEqualToString:targetId]) {
         
         targetId = @"john";
@@ -94,7 +113,7 @@
     vc.targetId = targetId;
     [self.navigationController pushViewController:vc animated:YES];
     
-    
+ */
 }
 
 - (void)logout{

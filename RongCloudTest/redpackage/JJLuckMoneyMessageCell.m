@@ -13,7 +13,7 @@
 #import "JJLuckMoneyMessage.h"
 #import "JJRecalMessage.h"
 
-@interface JJLuckMoneyMessageCell()
+@interface JJLuckMoneyMessageCell()<RCMessageCellDelegate>
 
 
 @property (nonatomic,assign) CGSize defaultSize;
@@ -54,6 +54,8 @@
 - (void)commontInit{
     
     __weak typeof(&*self) weakSelf = self;
+    
+    self.delegate = self;
     
     // Frame发生变化的回调
     [self.messageContentView setEventBlock:^(CGRect rect){
@@ -130,7 +132,7 @@
 - (void)onTapMessageContentView:(UITapGestureRecognizer *)sender{
     
     if (sender.state == UIGestureRecognizerStateEnded) {
-        [self.conversationVC didTapMessageCell:self.model];
+        [self didTapMessageCell:self.model];
     }
     
 }
@@ -181,11 +183,11 @@
     [super updateConstraints];
 }
 
-- (void)setConversationVC:(ChatTestViewController *)conversationVC{
-    
-    self.conversationVC = conversationVC;
-    
-}
+//- (void)setConversationVC:(ChatTestViewController *)conversationVC{
+//    
+//    _conversationVC = conversationVC;
+//    
+//}
 
 /*!
  自定义消息Cell的Size
@@ -226,6 +228,19 @@
     
 }
 
+- (void)didTapMessageCell:(RCMessageModel *)model{
+    
+    if ([model.content isKindOfClass:[JJLuckMoneyMessage class]]) {
+    
+        JJLuckMoneyMessage *luckModel = (JJLuckMoneyMessage *)model.content;
+        NSLog(@"红包价格是: %f   描述是 : %@",luckModel.amount,luckModel.desc);
+        
+    }
+    
+    
+
+    
+}
 
 
 @end
