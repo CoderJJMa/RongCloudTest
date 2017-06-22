@@ -14,7 +14,7 @@
 #import <BQMM/BQMM.h>
 #import "FastReplyVC.h"
 
-@interface ChatTestViewController ()
+@interface ChatTestViewController ()<RCConnectionStatusChangeDelegate>
 
 @property (nonatomic,strong)RCMessageModel *messageModel;
 
@@ -201,13 +201,9 @@
         RCTextMessageCell *textMEssageCell = (RCTextMessageCell *)cell;
         UILabel *textMsgLabel = (UILabel *)textMEssageCell.textLabel;
         textMsgLabel.textColor = [UIColor redColor];
-        
     }
-    
-    
+
 }
-
-
 
 
 @end

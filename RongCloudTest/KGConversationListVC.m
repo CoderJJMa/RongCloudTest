@@ -27,6 +27,10 @@
         
         [self setDisplayConversationTypes:@[@(ConversationType_PRIVATE),@(ConversationType_DISCUSSION),@(ConversationType_GROUP),@(ConversationType_CHATROOM)]];
         
+        [RCIM sharedRCIM].enableMessageMentioned = YES;
+        
+        
+        
     }
     
     return self;
