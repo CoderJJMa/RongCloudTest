@@ -11,6 +11,13 @@
 		30105E0A1EF90910006F1022 /* JJLuckMoneyMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30105E081EF90910006F1022 /* JJLuckMoneyMessageCell.m */; };
 		30105E0D1EF9091B006F1022 /* JJRecalMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30105E0C1EF9091B006F1022 /* JJRecalMessage.m */; };
 		30105E101EF90951006F1022 /* JJRecalMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30105E0F1EF90951006F1022 /* JJRecalMessageCell.m */; };
+		3029DB531EFB5289002BEE45 /* MMTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB4B1EFB5289002BEE45 /* MMTextAttachment.m */; };
+		3029DB541EFB5289002BEE45 /* MMTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB4D1EFB5289002BEE45 /* MMTextParser.m */; };
+		3029DB551EFB5289002BEE45 /* MMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB4F1EFB5289002BEE45 /* MMTextView.m */; };
+		3029DB561EFB5289002BEE45 /* BQMM.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3029DB511EFB5289002BEE45 /* BQMM.bundle */; };
+		3029DB571EFB5289002BEE45 /* BQMM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029DB521EFB5289002BEE45 /* BQMM.framework */; };
+		3029DB5C1EFB5321002BEE45 /* MMInputToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB591EFB5321002BEE45 /* MMInputToolBarView.m */; };
+		3029DB5D1EFB5321002BEE45 /* EditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB5B1EFB5321002BEE45 /* EditTextView.m */; };
 		30FA828E1EE4F5E3008A0C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA828D1EE4F5E3008A0C9E /* main.m */; };
 		30FA82911EE4F5E3008A0C9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82901EE4F5E3008A0C9E /* AppDelegate.m */; };
 		30FA82941EE4F5E3008A0C9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82931EE4F5E3008A0C9E /* ViewController.m */; };
@@ -32,6 +39,18 @@
 		30105E0C1EF9091B006F1022 /* JJRecalMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJRecalMessage.m; sourceTree = "<group>"; };
 		30105E0E1EF90951006F1022 /* JJRecalMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJRecalMessageCell.h; sourceTree = "<group>"; };
 		30105E0F1EF90951006F1022 /* JJRecalMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJRecalMessageCell.m; sourceTree = "<group>"; };
+		3029DB4A1EFB5289002BEE45 /* MMTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTextAttachment.h; sourceTree = "<group>"; };
+		3029DB4B1EFB5289002BEE45 /* MMTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTextAttachment.m; sourceTree = "<group>"; };
+		3029DB4C1EFB5289002BEE45 /* MMTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTextParser.h; sourceTree = "<group>"; };
+		3029DB4D1EFB5289002BEE45 /* MMTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTextParser.m; sourceTree = "<group>"; };
+		3029DB4E1EFB5289002BEE45 /* MMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTextView.h; sourceTree = "<group>"; };
+		3029DB4F1EFB5289002BEE45 /* MMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTextView.m; sourceTree = "<group>"; };
+		3029DB511EFB5289002BEE45 /* BQMM.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BQMM.bundle; sourceTree = "<group>"; };
+		3029DB521EFB5289002BEE45 /* BQMM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BQMM.framework; sourceTree = "<group>"; };
+		3029DB581EFB5321002BEE45 /* MMInputToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMInputToolBarView.h; sourceTree = "<group>"; };
+		3029DB591EFB5321002BEE45 /* MMInputToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInputToolBarView.m; sourceTree = "<group>"; };
+		3029DB5A1EFB5321002BEE45 /* EditTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTextView.h; sourceTree = "<group>"; };
+		3029DB5B1EFB5321002BEE45 /* EditTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTextView.m; sourceTree = "<group>"; };
 		30FA82891EE4F5E3008A0C9E /* RongCloudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RongCloudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FA828D1EE4F5E3008A0C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30FA828F1EE4F5E3008A0C9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9592B38776AC466BC02943B /* Pods_RongCloudTest.framework in Frameworks */,
+				3029DB571EFB5289002BEE45 /* BQMM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,9 +107,37 @@
 			path = redpackage2;
 			sourceTree = "<group>";
 		};
+		3029DB491EFB5289002BEE45 /* BQMM_EXT */ = {
+			isa = PBXGroup;
+			children = (
+				3029DB581EFB5321002BEE45 /* MMInputToolBarView.h */,
+				3029DB591EFB5321002BEE45 /* MMInputToolBarView.m */,
+				3029DB5A1EFB5321002BEE45 /* EditTextView.h */,
+				3029DB5B1EFB5321002BEE45 /* EditTextView.m */,
+				3029DB4A1EFB5289002BEE45 /* MMTextAttachment.h */,
+				3029DB4B1EFB5289002BEE45 /* MMTextAttachment.m */,
+				3029DB4C1EFB5289002BEE45 /* MMTextParser.h */,
+				3029DB4D1EFB5289002BEE45 /* MMTextParser.m */,
+				3029DB4E1EFB5289002BEE45 /* MMTextView.h */,
+				3029DB4F1EFB5289002BEE45 /* MMTextView.m */,
+			);
+			path = BQMM_EXT;
+			sourceTree = "<group>";
+		};
+		3029DB501EFB5289002BEE45 /* BQMM_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				3029DB511EFB5289002BEE45 /* BQMM.bundle */,
+				3029DB521EFB5289002BEE45 /* BQMM.framework */,
+			);
+			path = BQMM_SDK;
+			sourceTree = "<group>";
+		};
 		30FA82801EE4F5E3008A0C9E = {
 			isa = PBXGroup;
 			children = (
+				3029DB491EFB5289002BEE45 /* BQMM_EXT */,
+				3029DB501EFB5289002BEE45 /* BQMM_SDK */,
 				30FA828B1EE4F5E3008A0C9E /* RongCloudTest */,
 				30FA828A1EE4F5E3008A0C9E /* Products */,
 				D3D3CB763B3B0CD8AF86A3E3 /* Pods */,
@@ -224,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3029DB561EFB5289002BEE45 /* BQMM.bundle in Resources */,
 				30FA829C1EE4F5E3008A0C9E /* LaunchScreen.storyboard in Resources */,
 				30FA82991EE4F5E3008A0C9E /* Assets.xcassets in Resources */,
 				30FA82971EE4F5E3008A0C9E /* Main.storyboard in Resources */,
@@ -286,15 +335,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				30FA82941EE4F5E3008A0C9E /* ViewController.m in Sources */,
+				3029DB541EFB5289002BEE45 /* MMTextParser.m in Sources */,
 				30105E091EF90910006F1022 /* JJLuckMoneyMessage.m in Sources */,
 				30FA82911EE4F5E3008A0C9E /* AppDelegate.m in Sources */,
 				30105E101EF90951006F1022 /* JJRecalMessageCell.m in Sources */,
 				30105E0D1EF9091B006F1022 /* JJRecalMessage.m in Sources */,
 				30105E0A1EF90910006F1022 /* JJLuckMoneyMessageCell.m in Sources */,
+				3029DB5C1EFB5321002BEE45 /* MMInputToolBarView.m in Sources */,
 				30FA82A91EE4FB84008A0C9E /* KGUserDataSource.m in Sources */,
+				3029DB5D1EFB5321002BEE45 /* EditTextView.m in Sources */,
 				30FA828E1EE4F5E3008A0C9E /* main.m in Sources */,
 				30FA82AC1EE511ED008A0C9E /* ChatTestViewController.m in Sources */,
 				30FA82A61EE4F760008A0C9E /* KGConversationListVC.m in Sources */,
+				3029DB531EFB5289002BEE45 /* MMTextAttachment.m in Sources */,
+				3029DB551EFB5289002BEE45 /* MMTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +470,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CSPDBDZ5FD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BQMM_SDK",
+				);
 				INFOPLIST_FILE = RongCloudTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -430,6 +488,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CSPDBDZ5FD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BQMM_SDK",
+				);
 				INFOPLIST_FILE = RongCloudTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

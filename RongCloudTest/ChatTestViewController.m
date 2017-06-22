@@ -11,6 +11,7 @@
 #import "JJLuckMoneyMessage.h"
 #import "JJRecalMessage.h"
 #import "JJRecalMessageCell.h"
+#import <BQMM/BQMM.h>
 
 @interface ChatTestViewController ()
 
@@ -34,6 +35,9 @@
     self.enableNewComingMessageIcon = YES;
 
     [RCIM sharedRCIM].enableMessageMentioned = YES;
+
+    [MMEmotionCentre defaultCentre].delegate = _inputToolBar; //set SDK delegate
+    [[MMEmotionCentre defaultCentre] shouldShowShotcutPopoverAboveView:_inputToolBar.emojiButton withInput:_inputToolBar.inputTextView];
 
     //设置聊天背景
 //    self.conversationMessageCollectionView.backgroundColor = [UIColor clearColor];
