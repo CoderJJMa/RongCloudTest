@@ -13,6 +13,7 @@
 #import "JJRecalMessageCell.h"
 #import <BQMM/BQMM.h>
 #import "FastReplyVC.h"
+#import "CHAvatarBrowser.h"
 
 @interface ChatTestViewController ()<RCConnectionStatusChangeDelegate>
 
@@ -135,6 +136,38 @@
     
     
 }
+
+// 点击头像的回调
+- (void)didTapCellPortrait:(NSString *)userId{
+
+    if([[RCIM sharedRCIM].currentUserInfo.userId isEqualToString:userId]){
+        return;
+    }
+    
+    NSLog(@"点击头像的 Id  是 : %@",userId);
+    
+}
+
+- (void)presentImagePreviewController:(RCMessageModel *)model{
+    
+//    [super presentImagePreviewController:model];
+    
+    if ([model.content isKindOfClass:[RCImageMessage class]]) {
+    
+        RCImageMessage *imageMess = (RCImageMessage *)model.content;
+        
+//        NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:imageMess.imageUrl]];
+        NSData *data =[NSData dataWithContentsOfFile:imageMess.imageUrl];
+        UIImage *image = [[UIImage alloc] initWithData:data];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+        [CHAvatarBrowser showImage:imageView];//调用方法
+        
+    }
+    
+
+    
+}
+
 
 - (void)copyContent{
 

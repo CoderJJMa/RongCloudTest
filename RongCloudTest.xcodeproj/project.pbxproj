@@ -19,6 +19,7 @@
 		3029DB5C1EFB5321002BEE45 /* MMInputToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB591EFB5321002BEE45 /* MMInputToolBarView.m */; };
 		3029DB5D1EFB5321002BEE45 /* EditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB5B1EFB5321002BEE45 /* EditTextView.m */; };
 		3029DB601EFB6AD4002BEE45 /* FastReplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB5F1EFB6AD4002BEE45 /* FastReplyVC.m */; };
+		3029DF2F1EFBA588002BEE45 /* CHAvatarBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DF2E1EFBA588002BEE45 /* CHAvatarBrowser.m */; };
 		30FA828E1EE4F5E3008A0C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA828D1EE4F5E3008A0C9E /* main.m */; };
 		30FA82911EE4F5E3008A0C9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82901EE4F5E3008A0C9E /* AppDelegate.m */; };
 		30FA82941EE4F5E3008A0C9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82931EE4F5E3008A0C9E /* ViewController.m */; };
@@ -54,6 +55,8 @@
 		3029DB5B1EFB5321002BEE45 /* EditTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTextView.m; sourceTree = "<group>"; };
 		3029DB5E1EFB6AD4002BEE45 /* FastReplyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastReplyVC.h; sourceTree = "<group>"; };
 		3029DB5F1EFB6AD4002BEE45 /* FastReplyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastReplyVC.m; sourceTree = "<group>"; };
+		3029DF2D1EFBA588002BEE45 /* CHAvatarBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHAvatarBrowser.h; sourceTree = "<group>"; };
+		3029DF2E1EFBA588002BEE45 /* CHAvatarBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHAvatarBrowser.m; sourceTree = "<group>"; };
 		30FA82891EE4F5E3008A0C9E /* RongCloudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RongCloudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FA828D1EE4F5E3008A0C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30FA828F1EE4F5E3008A0C9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 				30FA828C1EE4F5E3008A0C9E /* Supporting Files */,
 				3029DB5E1EFB6AD4002BEE45 /* FastReplyVC.h */,
 				3029DB5F1EFB6AD4002BEE45 /* FastReplyVC.m */,
+				3029DF2D1EFBA588002BEE45 /* CHAvatarBrowser.h */,
+				3029DF2E1EFBA588002BEE45 /* CHAvatarBrowser.m */,
 			);
 			path = RongCloudTest;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 30FA82801EE4F5E3008A0C9E;
 			productRefGroup = 30FA828A1EE4F5E3008A0C9E /* Products */;
@@ -348,6 +354,7 @@
 				30105E0A1EF90910006F1022 /* JJLuckMoneyMessageCell.m in Sources */,
 				3029DB5C1EFB5321002BEE45 /* MMInputToolBarView.m in Sources */,
 				30FA82A91EE4FB84008A0C9E /* KGUserDataSource.m in Sources */,
+				3029DF2F1EFBA588002BEE45 /* CHAvatarBrowser.m in Sources */,
 				3029DB5D1EFB5321002BEE45 /* EditTextView.m in Sources */,
 				30FA828E1EE4F5E3008A0C9E /* main.m in Sources */,
 				3029DB601EFB6AD4002BEE45 /* FastReplyVC.m in Sources */,
@@ -479,10 +486,20 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BQMM_SDK",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework/AlipaySDK",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework/bqmm",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework/ifly",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework/JrmfIMLib",
 				);
 				INFOPLIST_FILE = RongCloudTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework",
+					"$(PROJECT_DIR)/ios-rongimdemo/RCloudMessage/Utilities/UMAnalytics",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingding.RongCloudTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -497,10 +514,20 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BQMM_SDK",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework/AlipaySDK",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework/bqmm",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework/ifly",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework/JrmfIMLib",
 				);
 				INFOPLIST_FILE = RongCloudTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ios-rongimdemo/framework",
+					"$(PROJECT_DIR)/ios-rongimdemo/RCloudMessage/Utilities/UMAnalytics",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingding.RongCloudTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

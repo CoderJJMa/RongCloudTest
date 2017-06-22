@@ -60,7 +60,7 @@
     // Frame发生变化的回调
     [self.messageContentView setEventBlock:^(CGRect rect){
         
-        if (!CGSizeEqualToSize(rect.size, weakSelf.defaultSize)) { return ;}
+//        if (!CGSizeEqualToSize(rect.size, weakSelf.defaultSize)) { return ;}
         if (!weakSelf.model) { return ;}
         
         BOOL isOutgoing = weakSelf.model.messageDirection == MessageDirection_SEND;

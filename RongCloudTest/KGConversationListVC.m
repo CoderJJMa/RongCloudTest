@@ -13,6 +13,8 @@
 
 @interface KGConversationListVC ()
 
+@property (nonatomic,strong)NSMutableArray *groupsArray;
+
 @end
 
 @implementation KGConversationListVC
@@ -42,6 +44,19 @@
     
     
     [self setupUI];
+    
+    // 添加群组
+    [self addGroup];
+    
+}
+
+- (void)addGroup{
+    
+    NSMutableArray *seletedUsersId = [NSMutableArray new];
+    
+    [seletedUsersId addObject:@"jack"];
+    [seletedUsersId addObject:@"john"];
+    
     
 }
 
@@ -75,7 +90,7 @@
     
     self.navigationItem.leftBarButtonItem = left;
 
-    UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addGroup)];
+    UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addDisc)];
                                
     self.navigationItem.rightBarButtonItem = right;
     
@@ -84,7 +99,7 @@
 
 
 
-- (void)addGroup{
+- (void)addDisc{
     
 //    - (void)createDiscussion:(NSString *)name
 //userIdList:(NSArray *)userIdList
