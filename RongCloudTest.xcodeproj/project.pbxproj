@@ -18,6 +18,7 @@
 		3029DB571EFB5289002BEE45 /* BQMM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3029DB521EFB5289002BEE45 /* BQMM.framework */; };
 		3029DB5C1EFB5321002BEE45 /* MMInputToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB591EFB5321002BEE45 /* MMInputToolBarView.m */; };
 		3029DB5D1EFB5321002BEE45 /* EditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB5B1EFB5321002BEE45 /* EditTextView.m */; };
+		3029DB601EFB6AD4002BEE45 /* FastReplyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029DB5F1EFB6AD4002BEE45 /* FastReplyVC.m */; };
 		30FA828E1EE4F5E3008A0C9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA828D1EE4F5E3008A0C9E /* main.m */; };
 		30FA82911EE4F5E3008A0C9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82901EE4F5E3008A0C9E /* AppDelegate.m */; };
 		30FA82941EE4F5E3008A0C9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FA82931EE4F5E3008A0C9E /* ViewController.m */; };
@@ -51,6 +52,8 @@
 		3029DB591EFB5321002BEE45 /* MMInputToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMInputToolBarView.m; sourceTree = "<group>"; };
 		3029DB5A1EFB5321002BEE45 /* EditTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTextView.h; sourceTree = "<group>"; };
 		3029DB5B1EFB5321002BEE45 /* EditTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTextView.m; sourceTree = "<group>"; };
+		3029DB5E1EFB6AD4002BEE45 /* FastReplyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastReplyVC.h; sourceTree = "<group>"; };
+		3029DB5F1EFB6AD4002BEE45 /* FastReplyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastReplyVC.m; sourceTree = "<group>"; };
 		30FA82891EE4F5E3008A0C9E /* RongCloudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RongCloudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FA828D1EE4F5E3008A0C9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		30FA828F1EE4F5E3008A0C9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				30FA82921EE4F5E3008A0C9E /* ViewController.h */,
 				30FA82931EE4F5E3008A0C9E /* ViewController.m */,
 				30FA828C1EE4F5E3008A0C9E /* Supporting Files */,
+				3029DB5E1EFB6AD4002BEE45 /* FastReplyVC.h */,
+				3029DB5F1EFB6AD4002BEE45 /* FastReplyVC.m */,
 			);
 			path = RongCloudTest;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				30FA82A91EE4FB84008A0C9E /* KGUserDataSource.m in Sources */,
 				3029DB5D1EFB5321002BEE45 /* EditTextView.m in Sources */,
 				30FA828E1EE4F5E3008A0C9E /* main.m in Sources */,
+				3029DB601EFB6AD4002BEE45 /* FastReplyVC.m in Sources */,
 				30FA82AC1EE511ED008A0C9E /* ChatTestViewController.m in Sources */,
 				30FA82A61EE4F760008A0C9E /* KGConversationListVC.m in Sources */,
 				3029DB531EFB5289002BEE45 /* MMTextAttachment.m in Sources */,

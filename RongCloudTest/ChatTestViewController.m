@@ -12,8 +12,11 @@
 #import "JJRecalMessage.h"
 #import "JJRecalMessageCell.h"
 #import <BQMM/BQMM.h>
+#import "FastReplyVC.h"
 
 @interface ChatTestViewController ()
+
+@property (nonatomic,strong)RCMessageModel *messageModel;
 
 @end
 
@@ -94,6 +97,74 @@
     }
     
 }
+
+// 点击消息
+- (void)didTapMessageCell:(RCMessageModel *)model{
+    
+    [super didTapMessageCell:model];
+    
+    if ([model.content isKindOfClass:[RCTextMessage class]]) {
+        
+        RCTextMessage *text = (RCTextMessage *)model.content;
+        
+        NSLog(@"点击消息  %@",text.content);
+        
+    }
+    
+}
+// 长按消息
+- (void)didLongTouchMessageCell:(RCMessageModel *)model
+                         inView:(UIView *)view{
+
+    [super didLongTouchMessageCell:model inView:view];
+    
+    if ([model.content isKindOfClass:[RCTextMessage class]]) {
+        
+        RCTextMessage *text = (RCTextMessage *)model.content;
+        self.messageModel = model;
+        NSLog(@"长按消息  %@",text.content);
+        UIMenuController * menu = [UIMenuController sharedMenuController];
+      
+        UIMenuItem * item0 = [[UIMenuItem alloc]initWithTitle:@"复制" action:@selector(copyContent)];
+        UIMenuItem * item1 = [[UIMenuItem alloc]initWithTitle:@"删除" action:@selector(deleteContent)];
+        UIMenuItem * item2 = [[UIMenuItem alloc]initWithTitle:@"添加快速回复" action:@selector(longPressContent)];
+        menu.menuItems = @[item0,item1,item2];
+                
+        [menu setMenuVisible:YES animated:YES];
+    }
+    
+    
+}
+
+- (void)copyContent{
+
+    if ([self.messageModel.content isKindOfClass:[RCTextMessage class]]) {
+    
+        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+
+        RCTextMessage *text = (RCTextMessage *)self.messageModel.content;
+        pasteboard.string = text.content;
+        
+    }
+    
+}
+
+- (void)deleteContent{
+
+    [self deleteMessage:self.messageModel];
+    
+}
+
+
+- (void)longPressContent{
+
+    FastReplyVC *vc = [[FastReplyVC alloc] init];
+    vc.title = @"快速回复";
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
 
 // 捕获消息内容
 - (RCMessageContent *)willSendMessage:(RCMessageContent *)messageCotent{
