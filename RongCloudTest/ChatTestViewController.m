@@ -32,26 +32,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+ 
+    [self config];
+    
+}
+
+- (void)config{
+    
+    
     self.enableNewComingMessageIcon = YES;
-
+    
     [RCIM sharedRCIM].enableMessageMentioned = YES;
-
+    
     [MMEmotionCentre defaultCentre].delegate = _inputToolBar; //set SDK delegate
     [[MMEmotionCentre defaultCentre] shouldShowShotcutPopoverAboveView:_inputToolBar.emojiButton withInput:_inputToolBar.inputTextView];
-
+    
     //设置聊天背景
-//    self.conversationMessageCollectionView.backgroundColor = [UIColor clearColor];
-//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"dlrb"]];
+    //    self.conversationMessageCollectionView.backgroundColor = [UIColor clearColor];
+    //    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"dlrb"]];
     
     [self.chatSessionInputBarControl.pluginBoardView insertItemWithImage:[UIImage imageNamed:@"redpackage"] title:@"红包" tag:2000];
     // 注册自定义的cell
     [self registerClass:[JJLuckMoneyMessageCell class] forMessageClass:[JJLuckMoneyMessage class]];
     
     [self registerClass:[JJRecalMessageCell class] forMessageClass:[JJRecalMessage class]];
-
+    
     [self.conversationMessageCollectionView registerClass:[JJLuckMoneyMessageCell class] forCellWithReuseIdentifier:NSStringFromClass([JJLuckMoneyMessageCell class])];
     [self.conversationMessageCollectionView registerClass:[JJRecalMessageCell class] forCellWithReuseIdentifier:NSStringFromClass([JJRecalMessageCell class])];
 
+    
+     // 开启该提示功能之后，当一个会话收到大量消息时（操作一个屏幕能显示的内容），进入该会话后，会在右上角提示用户上方存在的未读消息数，用户点击该提醒按钮，会跳转到最开始的未读消息
+    self.enableUnreadMessageIcon = YES;
+    
+    // 撤回
+    [RCIM sharedRCIM].enableMessageRecall = YES;
+    
+    // 导航栏显示正在输入状态
+    [RCIM sharedRCIM].enableTypingStatus = YES;
     
 }
 
